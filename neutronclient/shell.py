@@ -61,6 +61,7 @@ from neutronclient.neutron.v2_0.vpn import ikepolicy
 from neutronclient.neutron.v2_0.vpn import ipsec_site_connection
 from neutronclient.neutron.v2_0.vpn import ipsecpolicy
 from neutronclient.neutron.v2_0.vpn import vpnservice
+from neutronclient.neutron.v2_0 import ipam
 from neutronclient.openstack.common.gettextutils import _
 from neutronclient.openstack.common import strutils
 from neutronclient.version import __version__
@@ -277,6 +278,11 @@ COMMAND_V2 = {
     'nec-packet-filter-create': packetfilter.CreatePacketFilter,
     'nec-packet-filter-update': packetfilter.UpdatePacketFilter,
     'nec-packet-filter-delete': packetfilter.DeletePacketFilter,
+    'ipam-list': ipam.ListIpam,
+    'ipam-show': ipam.ShowIpam,
+    'ipam-create': ipam.CreateIpam,
+    'ipam-delete': ipam.DeleteIpam,
+    'ipam-update': ipam.UpdateIpam,	
 }
 
 COMMANDS = {'2.0': COMMAND_V2}
