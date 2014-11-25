@@ -278,11 +278,11 @@ COMMAND_V2 = {
     'nec-packet-filter-create': packetfilter.CreatePacketFilter,
     'nec-packet-filter-update': packetfilter.UpdatePacketFilter,
     'nec-packet-filter-delete': packetfilter.DeletePacketFilter,
-    'ipam-list': ipam.ListIpam,
-    'ipam-show': ipam.ShowIpam,
-    'ipam-create': ipam.CreateIpam,
-    'ipam-delete': ipam.DeleteIpam,
-    'ipam-update': ipam.UpdateIpam,	
+    'contrail-ipam-list': ipam.ListIpam,
+    'contrail-ipam-show': ipam.ShowIpam,
+    'contrail-ipam-create': ipam.CreateIpam,
+    'contrail-ipam-delete': ipam.DeleteIpam,
+    'contrail-ipam-update': ipam.UpdateIpam,	
 }
 
 COMMANDS = {'2.0': COMMAND_V2}
