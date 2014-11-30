@@ -79,8 +79,10 @@ class CreateIpam(neutronV20.CreateCommand):
                 'ipam_dns_method': parsed_args.dns_method,
                 'ipam_dns_server': {
                 'tenant_dns_server_address': {
-                'ip_address': parsed_args.tenant_dns_server_ip_address, },
-                'virtual_dns_server_name': parsed_args.virtual_dns_server_name},
+                    'ip_address':
+                    parsed_args.tenant_dns_server_ip_address, },
+                'virtual_dns_server_name':
+                    parsed_args.virtual_dns_server_name},
                 'dhcp_option_list': None,
                 'host_routes': None,
                 'cidr_block': None}, }, }
