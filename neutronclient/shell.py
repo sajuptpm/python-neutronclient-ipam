@@ -39,6 +39,7 @@ from neutronclient.neutron.v2_0 import floatingip
 from neutronclient.neutron.v2_0.fw import firewall
 from neutronclient.neutron.v2_0.fw import firewallpolicy
 from neutronclient.neutron.v2_0.fw import firewallrule
+from neutronclient.neutron.v2_0 import ipam
 from neutronclient.neutron.v2_0.lb import healthmonitor as lb_healthmonitor
 from neutronclient.neutron.v2_0.lb import member as lb_member
 from neutronclient.neutron.v2_0.lb import pool as lb_pool
@@ -61,7 +62,6 @@ from neutronclient.neutron.v2_0.vpn import ikepolicy
 from neutronclient.neutron.v2_0.vpn import ipsec_site_connection
 from neutronclient.neutron.v2_0.vpn import ipsecpolicy
 from neutronclient.neutron.v2_0.vpn import vpnservice
-from neutronclient.neutron.v2_0 import ipam
 from neutronclient.openstack.common.gettextutils import _
 from neutronclient.openstack.common import strutils
 from neutronclient.version import __version__
@@ -282,7 +282,7 @@ COMMAND_V2 = {
     'contrail-ipam-show': ipam.ShowIpam,
     'contrail-ipam-create': ipam.CreateIpam,
     'contrail-ipam-delete': ipam.DeleteIpam,
-    'contrail-ipam-update': ipam.UpdateIpam,	
+    'contrail-ipam-update': ipam.UpdateIpam,
 }
 
 COMMANDS = {'2.0': COMMAND_V2}
